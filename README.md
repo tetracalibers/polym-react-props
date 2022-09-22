@@ -129,10 +129,12 @@ const MyComponentInner = <As extends ElementType>({
   ref,
   ...props
 }: MyComponentProps<As>) => {
+  const ActualComponent = as || 'div'
+
   return (
-    <MyInnerComponent {...props} ref={ref} as={as || 'div'}>
+    <ActualComponent {...props} ref={ref}>
       {children}
-    </MyInnerComponent>
+    </ActualComponent>
   )
 }
 
