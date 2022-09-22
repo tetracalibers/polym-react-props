@@ -1,7 +1,12 @@
 {
   "name": "@polym/props",
+  "description": "Utility for defining props for React components",
   "version": "0.0.0",
   "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "tomixy"
+  },
   "types": "./types/index.d.ts",
   "files": [
     "/dist",
