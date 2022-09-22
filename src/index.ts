@@ -3,8 +3,8 @@ import type {
   PolymorphicRef
 } from './polymorphic/index'
 import type { PolymorphicComponentProp } from './polymorphic'
-import { getDefaultProps } from './props-def'
-import type { getPropType, Required, NotRequired } from './props-def'
+import { getDefaultProps, Required, NotRequired } from './props-def'
+import type { getPropType } from './props-def'
 import type { CSSt } from './css-type'
 
 export {
