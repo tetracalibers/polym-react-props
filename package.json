@@ -1,5 +1,5 @@
 {
-  "name": "@polym/props",
+  "name": "@polym/react-props",
   "description": "Utility for defining props for React components",
   "version": "0.0.0",
   "type": "module",
@@ -12,12 +12,12 @@
     "/dist",
     "/types"
   ],
-  "main": "./dist/polym-props.umd.js",
-  "module": "./dist/polym-props.es.js",
+  "main": "./dist/polym-react-props.umd.js",
+  "module": "./dist/polym-react-props.es.js",
   "exports": {
     ".": {
-      "import": "./dist/polym-props.es.js",
-      "require": "./dist/polym-props.umd.js"
+      "import": "./dist/polym-react-props.es.js",
+      "require": "./dist/polym-react-props.umd.js"
     }
   },
   "scripts": {

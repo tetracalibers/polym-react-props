@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: '@polym/props',
-      fileName: (format) => `polym-props.${format}.js`
+      name: '@polym/react-props',
+      fileName: (format) => `polym-react-props.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom']

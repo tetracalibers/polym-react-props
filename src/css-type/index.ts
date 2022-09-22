@@ -1,4 +1,4 @@
-export namespace CSS {
+export namespace CSSt {
   export namespace Unit {
     export const length = [
       'px',
