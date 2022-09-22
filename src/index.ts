@@ -5,7 +5,7 @@ import type {
 import type { PolymorphicComponentProp } from './polymorphic'
 import { getDefaultProps, Required, NotRequired } from './props-def'
 import type { getPropType } from './props-def'
-import type { CSSt } from './css-type'
+import { CSSt } from './css-type'
 
 export {
   Required,
