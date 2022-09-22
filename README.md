@@ -39,7 +39,7 @@ const conf = {
 type PropType = getPropType<typeof conf>
 
 /* Get default value object for all props */
-const defaultProps = getDefaultProps<AsFromProps>(conf)
+const defaultProps = getDefaultProps<PropType>(conf)
 ```
 
 Centralize the props information (type, default value, and whether it is required or not) in a configuration object.
@@ -91,7 +91,7 @@ type PropType = getPropType<typeof conf> & {
 }
 
 const defaultProps = {
-  ...getDefaultProps<AsFromProps>(conf),
+  ...getDefaultProps<PropType>(conf),
   onChange: (value: string) => console.log(value)
 }
 ```
