@@ -1,7 +1,7 @@
 {
   "name": "@polym/react-props",
   "description": "Utility for defining props for React components",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "keywords": [
     "react",
     "props",
