@@ -2,6 +2,13 @@
   "name": "@polym/react-props",
   "description": "Utility for defining props for React components",
   "version": "0.0.4",
+  "keywords": [
+    "react",
+    "props",
+    "ts",
+    "tsx",
+    "typescript"
+  ],
   "type": "module",
   "license": "MIT",
   "author": {
