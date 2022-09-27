@@ -112,7 +112,10 @@ Specifically, it is possible to implement components that change the type of pro
 
 ```ts
 import { ElementType, forwardRef, ReactElement } from 'react'
-import { PolymorphicComponentPropWithRef } from '@polym/react-props'
+import {
+  PolymorphicComponentPropWithRef,
+  PolymorphicRef
+} from '@polym/react-props'
 
 type MyComponentProps<As extends ElementType> = PolymorphicComponentPropWithRef<
   As,
@@ -123,12 +126,10 @@ type MyComponentType = <As extends ElementType>(
   props: MyComponentProps<As>
 ) => ReactElement | null
 
-const MyComponentInner = <As extends ElementType>({
-  as,
-  children,
-  ref,
-  ...props
-}: MyComponentProps<As>) => {
+const MyComponentInner = <As extends ElementType>(
+  { as, children, ...props }: MyComponentProps<As>,
+  ref: PolymorphicRef<As>
+) => {
   const ActualComponent = as || 'div'
 
   return (
